@@ -12,6 +12,7 @@ class EmailQueueFixture extends TestFixture
     public $table = 'email_queue';
 
     /**
+<<<<<<< HEAD
      * Fields.
      *
      * @var array
@@ -41,13 +42,15 @@ class EmailQueueFixture extends TestFixture
     ];
 
     /**
+=======
+>>>>>>> 6eaf1f16f02d8b0f6c2bf48cbdf371e53f1a4993
      * Records.
      *
      * @var array
      */
     public $records = [
         [
-            'id' => 'email-1',
+            'id' => '1',
             'email' => 'example@example.com',
             'from_name' => null,
             'from_email' => null,
@@ -55,6 +58,7 @@ class EmailQueueFixture extends TestFixture
             'config' => 'default',
             'template' => 'default',
             'layout' => 'default',
+            'theme' => 'default',
             'format' => 'both',
             'template_vars' => '{"a":1,"b":2}',
             'headers' => '{"foo":"bar"}',
@@ -66,7 +70,7 @@ class EmailQueueFixture extends TestFixture
             'modified' => '2011-06-20 13:50:48',
         ],
         [
-            'id' => 'email-2',
+            'id' => 2,
             'email' => 'example2@example.com',
             'from_name' => null,
             'from_email' => null,
@@ -74,6 +78,7 @@ class EmailQueueFixture extends TestFixture
             'config' => 'default',
             'template' => 'default',
             'layout' => 'default',
+            'theme' => 'default',
             'format' => 'both',
             'template_vars' => '{"a":1,"b":2}',
             'headers' => '{"foo":"bar"}',
@@ -85,7 +90,7 @@ class EmailQueueFixture extends TestFixture
             'modified' => '2011-06-20 13:50:48',
         ],
         [
-            'id' => 'email-3',
+            'id' => 3,
             'email' => 'example3@example.com',
             'from_name' => null,
             'from_email' => null,
@@ -93,6 +98,7 @@ class EmailQueueFixture extends TestFixture
             'config' => 'default',
             'template' => 'default',
             'layout' => 'default',
+            'theme' => 'default',
             'format' => 'both',
             'template_vars' => '{"a":1,"b":2}',
             'headers' => '{"foo":"bar"}',
@@ -104,7 +110,7 @@ class EmailQueueFixture extends TestFixture
             'modified' => '2011-06-20 13:50:48',
         ],
         [
-            'id' => 'email-4',
+            'id' => 4,
             'email' => 'example@example.com',
             'from_name' => null,
             'from_email' => null,
@@ -112,6 +118,7 @@ class EmailQueueFixture extends TestFixture
             'config' => 'default',
             'template' => 'default',
             'layout' => 'default',
+            'theme' => 'default',
             'format' => 'both',
             'template_vars' => '{"a":1,"b":2}',
             'headers' => '{"foo":"bar"}',
@@ -123,7 +130,7 @@ class EmailQueueFixture extends TestFixture
             'modified' => '2011-06-20 13:50:48',
         ],
         [
-            'id' => 'email-5',
+            'id' => 5,
             'email' => 'example@example.com',
             'from_name' => null,
             'from_email' => null,
@@ -131,6 +138,7 @@ class EmailQueueFixture extends TestFixture
             'config' => 'default',
             'template' => 'default',
             'layout' => 'default',
+            'theme' => 'default',
             'format' => 'both',
             'template_vars' => '{"a":1,"b":2}',
             'headers' => '{"foo":"bar"}',
@@ -142,7 +150,7 @@ class EmailQueueFixture extends TestFixture
             'modified' => '2011-06-20 13:50:48',
         ],
         [
-            'id' => 'email-6',
+            'id' => 6,
             'email' => 'example@example.com',
             'from_name' => null,
             'from_email' => null,
@@ -150,6 +158,7 @@ class EmailQueueFixture extends TestFixture
             'config' => 'default',
             'template' => 'default',
             'layout' => 'default',
+            'theme' => 'default',
             'format' => 'both',
             'template_vars' => '{"a":1,"b":2}',
             'headers' => '{"foo":"bar"}',

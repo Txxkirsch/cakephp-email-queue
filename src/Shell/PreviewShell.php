@@ -14,7 +14,7 @@ class PreviewShell extends Shell
     /**
      * Main
      *
-     * @return bool|int|null|void
+     * @return void
      */
     public function main()
     {
@@ -26,7 +26,7 @@ class PreviewShell extends Shell
         }
 
         $emailQueue = TableRegistry::getTableLocator()->get('EmailQueue', ['className' => EmailQueueTable::class]);
-        $emails = $emailQueue->find()->where($conditions)->toList();
+        $emails = $emailQueue->find()->where($conditions)->all()->toList();
 
         if (!$emails) {
             $this->out('No emails found');
@@ -40,7 +40,7 @@ class PreviewShell extends Shell
                 $this->in('Hit a key to continue');
                 $this->clear();
             }
-            $this->out('Email :' . $email['EmailQueue']['id']);
+            $this->out('Email :' . $email['id']);
             $this->preview($email);
         }
     }
